@@ -15,13 +15,13 @@
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 <body>
-    <div id="root">
-        <script type="module">
-            const mydiv=document.createElement('div');
-            mydiv.textContent="Hello World";
-            mydiv.className="container";
-            const root=document.getElementById('root');
-            root.append(mydiv);
-        </script>
-    </div>
+  <script type="module">
+      const root=document.createElement('div');
+      root.id="root";
+      document.body.append(root);
+      const mydiv=document.createElement('div');
+      mydiv.textContent="Hello World";
+      mydiv.className="container";
+      root.append(mydiv);
+ </script>
 </body>
